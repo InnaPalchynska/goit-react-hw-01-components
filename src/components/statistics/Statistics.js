@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
+import s from './Statistics.module.css';
 
 function Statistics({ id, label, percentage }) {
   return (
-    <li class="item" key={id}>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}%</span>
+    <li className={`${s.item}`} key={id}>
+      <span className="label">{label}</span>
+      <span className={`${s.percentage}`}>{percentage}%</span>
     </li>
   );
 }
 
 Statistics.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;

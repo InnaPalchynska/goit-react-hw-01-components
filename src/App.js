@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import Profile from './components/profile/Profile';
 import user from './data/user.json';
 
@@ -8,6 +8,9 @@ import statisticalData from './data/statistical-data.json';
 
 import FriendList from './components/friendList/FriendList';
 import friends from './data/friends.json';
+
+import transactions from './data/transactions.json';
+import TransactionHistory from './components/transactionHistory/TransactionHistory';
 
 function App() {
   return (
@@ -26,6 +29,7 @@ function App() {
         <StatisticsList stats={statisticalData} />
       </SectionStatistics>
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }

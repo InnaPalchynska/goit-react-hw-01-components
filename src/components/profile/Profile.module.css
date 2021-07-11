@@ -1,0 +1,30 @@
+.profile {
+  margin: 30px auto;
+  width: 300px;
+  height: auto;
+  outline: 1px solid olivedrab;
+  text-align: center;
+}
+
+.avatar {
+  margin: auto;
+  padding: 10px;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.stats {
+  display: flex;
+  padding: 15px;
+  justify-content: space-around;
+}
+
+.label {
+  display: block;
+}
