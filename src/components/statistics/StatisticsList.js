@@ -4,7 +4,7 @@ import s from './StatisticsList.module.css';
 
 function StatisticsList({ stats }) {
   return (
-    <ul className={`${s.statList}`}>
+    <ul className={s.statList}>
       {stats.map(stat => (
         <Statistics
           key={stat.id}

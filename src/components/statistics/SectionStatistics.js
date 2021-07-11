@@ -3,7 +3,7 @@ import s from './SectionStatistics.module.css';
 
 function SectionStatistics({ title, children }) {
   return (
-    <section className={`${s.statistics}`}>
+    <section className={s.statistics}>
       {{ title } && <h2 className="title">{title}</h2>}
       {children}
     </section>

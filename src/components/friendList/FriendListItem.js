@@ -3,7 +3,7 @@ import s from './FriendsList.module.css';
 
 function FriendListItem({ id, avatar, name, isOnline }) {
   return (
-    <li className={`${s.item}`} key={id}>
+    <li className={s.item} key={id}>
       <span className={isOnline ? `${s.online}` : `${s.offline}`}>
         {isOnline}
       </span>
